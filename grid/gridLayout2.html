@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+        header {
+            height: 100px;
+            background-color: coral;
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            font-family: 'Nanum Gothic';
+        }
+
+        footer {
+            font-family: 'Nanum Gothic';
+            color: black;
+            text-align: center;
+        }
+
+        ul.nav {
+            background-color: gainsboro;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .banner{
+            background-color: gainsboro;
+            padding: 10px;
+            border-radius: 10px;
+            height: 200px;
+        }
+
+        .hr1{
+            border: 0;
+            height: 2px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>그리드 시스템을 이용한 레이아웃</h2>
+        </header>
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav">
+                    <li>menu1</li>
+                    <li>menu1</li>
+                    <li>menu1</li>
+                    <li>menu1</li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <p>공룡(恐龍, Dinosaur)[1]은 파충강(reptilia)[참고] 이궁아강(Diapsid) 가운데 조반목(ornithischia)과 용반목(saurischia)에 해당하는
+                    동물군[3]을 총칭한다. 지금으로부터 2억 5천만 년 전인 중생대 트라이아스기 초에 등장했다.</p>
+                <p>중생대 백악기 후기에 용반목 수각류 공룡 중 하나인 새를 제외하곤 대부분의 공룡이 지구상에서 절멸했다. 과거에는 대중적으로 모든 공룡들이 멸종한 것으로 알려졌으나, 연구를 통해 새가
+                    살아남은 공룡이라는 사실이 밝혀진 것이다.</p>
+            </div>
+            <div class="col-md-2">
+                <div class="banner">기타 부가적인 내용이 들어가는 곳</div>
+            </div>
+        </div>
+        <hr class="hr1">
+        <footer>
+            여기가 푸터 들어가는 곳입니다.
+        </footer>
+    </div>
+
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</body>
+
+</html>
