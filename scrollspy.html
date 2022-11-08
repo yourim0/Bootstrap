@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+        .scrollcontent h4{
+            padding: 70px;
+        }
+
+        body{
+            padding-top: 70px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<!--  data-offset="50"> : 50px 떨어진 위치부터 활성화 
+        body 태그에 data-spy줄 경우 반드시 position : relative 해야한다 -->
+<body data-spy="scroll" data-target="#navbar-example" data-offset="50"> <!--body 부분에서 scroll이 움직이면 따라가겠다?-->
+    <!-- 페이지 내 이동 (스크롤 위치를 따라다님)-->
+    <div class="container" >
+        <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Scrollspy</a>
+                </div>
+
+                <div class="collspse navbar-collapse navbar-left navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#menu1">메뉴1</a></li> <!--id 값으로 타겟 지정부분-->
+                        <li><a href="#menu2">메뉴2</a></li>
+                        <li><a href="#menu3">메뉴3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="scrollcontent">
+            <h1>스크롤 스파이</h1>
+            
+            <h4 id="menu1">메뉴1</h4>
+            <p>1. Dinosaurs are a diverse group of reptiles[note 1] of the clade Dinosauria. They first appeared during the Triassic period, between 243 and 233.23 million years ago (mya), although the exact origin and timing of the evolution of dinosaurs is the subject of active research. They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201.3 mya; their dominance continued throughout the Jurassic and Cretaceous periods. The fossil record shows that birds are feathered dinosaurs, having evolved from earlier theropods during the Late Jurassic epoch, and are the only dinosaur lineage known to have survived the Cretaceous–Paleogene extinction event approximately 66 mya. Dinosaurs can therefore be divided into avian dinosaurs—birds—and the extinct non-avian dinosaurs, which are all dinosaurs other than birds.
+                Dinosaurs are varied from taxonomic, morphological and ecological standpoints. Birds, at over 10,700 living species, are among the most diverse group of vertebrates. Using fossil evidence, paleontologists have identified over 900 distinct genera and more than 1,000 different species of non-avian dinosaurs. Dinosaurs are represented on every continent by both extant species (birds) and fossil remains. Through the first half of the 20th century, before birds were recognized as dinosaurs, most of the scientific community believed dinosaurs to have been sluggish and cold-blooded. Most research conducted since the 1970s, however, has indicated that dinosaurs were active animals with elevated metabolisms and numerous adaptations for social interaction. Some were herbivorous, others carnivorous. Evidence suggests that all dinosaurs were egg-laying, and that nest-building was a trait shared by many dinosaurs, both avian and non-avian.
+                While dinosaurs were ancestrally bipedal, many extinct groups included quadrupedal species, and some were able to shift between these stances. Elaborate display structures such as horns or crests are common to all dinosaur groups, and some extinct groups developed skeletal modifications such as bony armor and spines. While the dinosaurs' modern-day surviving avian lineage (birds) are generally small due to the constraints of flight, many prehistoric dinosaurs (non-avian and avian) were large-bodied—the largest sauropod dinosaurs are estimated to have reached lengths of 39.7 meters (130 feet) and heights of 18 m (59 ft) and were the largest land animals of all time. The misconception that non-avian dinosaurs were uniformly gigantic is based in part on preservation bias, as large, sturdy bones are more likely to last until they are fossilized. Many dinosaurs were quite small, some measuring about 50 centimeters (20 inches) in length.</p>
+
+            <h4 id="menu2">메뉴2</h4>
+            <p>2. Dinosaurs are a diverse group of reptiles[note 1] of the clade Dinosauria. They first appeared during the Triassic period, between 243 and 233.23 million years ago (mya), although the exact origin and timing of the evolution of dinosaurs is the subject of active research. They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201.3 mya; their dominance continued throughout the Jurassic and Cretaceous periods. The fossil record shows that birds are feathered dinosaurs, having evolved from earlier theropods during the Late Jurassic epoch, and are the only dinosaur lineage known to have survived the Cretaceous–Paleogene extinction event approximately 66 mya. Dinosaurs can therefore be divided into avian dinosaurs—birds—and the extinct non-avian dinosaurs, which are all dinosaurs other than birds.
+
+                Dinosaurs are varied from taxonomic, morphological and ecological standpoints. Birds, at over 10,700 living species, are among the most diverse group of vertebrates. Using fossil evidence, paleontologists have identified over 900 distinct genera and more than 1,000 different species of non-avian dinosaurs. Dinosaurs are represented on every continent by both extant species (birds) and fossil remains. Through the first half of the 20th century, before birds were recognized as dinosaurs, most of the scientific community believed dinosaurs to have been sluggish and cold-blooded. Most research conducted since the 1970s, however, has indicated that dinosaurs were active animals with elevated metabolisms and numerous adaptations for social interaction. Some were herbivorous, others carnivorous. Evidence suggests that all dinosaurs were egg-laying, and that nest-building was a trait shared by many dinosaurs, both avian and non-avian.
+                
+                While dinosaurs were ancestrally bipedal, many extinct groups included quadrupedal species, and some were able to shift between these stances. Elaborate display structures such as horns or crests are common to all dinosaur groups, and some extinct groups developed skeletal modifications such as bony armor and spines. While the dinosaurs' modern-day surviving avian lineage (birds) are generally small due to the constraints of flight, many prehistoric dinosaurs (non-avian and avian) were large-bodied—the largest sauropod dinosaurs are estimated to have reached lengths of 39.7 meters (130 feet) and heights of 18 m (59 ft) and were the largest land animals of all time. The misconception that non-avian dinosaurs were uniformly gigantic is based in part on preservation bias, as large, sturdy bones are more likely to last until they are fossilized. Many dinosaurs were quite small, some measuring about 50 centimeters (20 inches) in length.</p>
+
+            <h4 id="menu3">메뉴3</h4>
+            <p>3. Dinosaurs are a diverse group of reptiles[note 1] of the clade Dinosauria. They first appeared during the Triassic period, between 243 and 233.23 million years ago (mya), although the exact origin and timing of the evolution of dinosaurs is the subject of active research. They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201.3 mya; their dominance continued throughout the Jurassic and Cretaceous periods. The fossil record shows that birds are feathered dinosaurs, having evolved from earlier theropods during the Late Jurassic epoch, and are the only dinosaur lineage known to have survived the Cretaceous–Paleogene extinction event approximately 66 mya. Dinosaurs can therefore be divided into avian dinosaurs—birds—and the extinct non-avian dinosaurs, which are all dinosaurs other than birds.
+
+                Dinosaurs are varied from taxonomic, morphological and ecological standpoints. Birds, at over 10,700 living species, are among the most diverse group of vertebrates. Using fossil evidence, paleontologists have identified over 900 distinct genera and more than 1,000 different species of non-avian dinosaurs. Dinosaurs are represented on every continent by both extant species (birds) and fossil remains. Through the first half of the 20th century, before birds were recognized as dinosaurs, most of the scientific community believed dinosaurs to have been sluggish and cold-blooded. Most research conducted since the 1970s, however, has indicated that dinosaurs were active animals with elevated metabolisms and numerous adaptations for social interaction. Some were herbivorous, others carnivorous. Evidence suggests that all dinosaurs were egg-laying, and that nest-building was a trait shared by many dinosaurs, both avian and non-avian.
+                
+                While dinosaurs were ancestrally bipedal, many extinct groups included quadrupedal species, and some were able to shift between these stances. Elaborate display structures such as horns or crests are common to all dinosaur groups, and some extinct groups developed skeletal modifications such as bony armor and spines. While the dinosaurs' modern-day surviving avian lineage (birds) are generally small due to the constraints of flight, many prehistoric dinosaurs (non-avian and avian) were large-bodied—the largest sauropod dinosaurs are estimated to have reached lengths of 39.7 meters (130 feet) and heights of 18 m (59 ft) and were the largest land animals of all time. The misconception that non-avian dinosaurs were uniformly gigantic is based in part on preservation bias, as large, sturdy bones are more likely to last until they are fossilized. Many dinosaurs were quite small, some measuring about 50 centimeters (20 inches) in length.</p>
+        </div>
+
+
+    </div>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
