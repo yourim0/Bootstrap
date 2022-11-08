@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToggleTab</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container" >
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">홈</a></li> <!--id값으로 연결--> 
+            <li><a href="#tab1" data-toggle="tab">탭1</a></li>
+            <li><a href="#tab2" data-toggle="tab">탭2</a></li>
+            <li><a href="#tab3" data-toggle="tab">탭3</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <h3>홈</h3>
+                    <p>1번</p>
+                </div>
+            <div class="tab-pane" id="tab1">
+                <h3>홈</h3>
+                <p>2번</p>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <h3>홈</h3>
+                <p>3번</p>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <h3>홈</h3>
+                <p>4번</p>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
