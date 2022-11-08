@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <style>
+        /* 2. navbar-fixed-up하면 가려지는 내용 보이게  */
+        body{
+            padding-top: 70px;
+            /* padding-bottom:70px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--  navbar-fixed-top / bottom: 네이게이션 바 상단, 하단에 고정 -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container"> <!--2. navbar-fiexed-top 양쪽으로 메뉴 퍼지는 현상 : container로 묶어준다 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">로고</a>
+            </div>
+
+            <!-- 보통 목록태그로 진행-
+            <div class="collspse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                </ul>
+                <!-- 검색 태그, submit 버튼
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="검색">
+                    </div>
+                    <button type="button" class="btn btn-default">submit</button>
+                </form>
+            </div>->
+
+
+            <!-- dropdown 형태로 변환, navbar-right, navbar-left 배치 속성
+                 form 태그와 분리해서 왼, 오로 배치하려면div에서 지우고 ul 태그에 속성을 넣어야 함 -->
+            <div class="collspse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">메뉴1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">메뉴2<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">메뉴3<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="검색">
+                    </div>
+                    <button type="button" class="btn btn-default">submit</button>
+                </form>
+            </div>
+        </div> <!--2. navbar-fiexed-top 양쪽으로 메뉴 퍼지는 현상 -->
+            
+
+        </nav>
+        <article>
+            <p>Dinosaurs are a diverse group of reptiles[note 1] of the clade Dinosauria.</p>
+            <p>Using fossil evidence, paleontologists have identified over 900 distinct genera and more than 1,000 different species of non-avian dinosaurs.</p>
+            <p>While dinosaurs were ancestrally bipedal, many extinct groups included quadrupedal species, and some were able to shift between these stances. </p>
+            <p>The first dinosaur fossils were recognized in the early 19th century, with the name "dinosaur" (meaning "terrible lizard") being coined by Sir Richard Owen in 1841 to refer to these "great fossil lizards". Since then, mounted fossil dinosaur skeletons have been major attractions at museums worldwide, and dinosaurs have become an enduring part of popular culture. The large sizes of some dinosaurs, as well as their seemingly monstrous and fantastic nature, have ensured their regular appearance in best-selling books and films, such as Jurassic Park. Persistent public enthusiasm for the animals has resulted in significant funding for dinosaur science, and new discoveries are regularly covered by the media.</p>
+            <p>They first appeared during the Triassic period, between 243 and 233.23 million years ago (mya), although the exact origin and timing of the evolution of dinosaurs is the subject of active research. </p>
+            <p>Dinosaurs are a diverse group of reptiles[note 1] of the clade Dinosauria.
+
+                Using fossil evidence, paleontologists have identified over 900 distinct genera and more than 1,000 different species of non-avian dinosaurs.
+                
+                While dinosaurs were ancestrally bipedal, many extinct groups included quadrupedal species, and some were able to shift between these stances.
+                
+                The first dinosaur fossils were recognized in the early 19th century, with the name "dinosaur" (meaning "terrible lizard") being coined by Sir Richard Owen in 1841 to refer to these "great fossil lizards". Since then, mounted fossil dinosaur skeletons have been major attractions at museums worldwide, and dinosaurs have become an enduring part of popular culture. The large sizes of some dinosaurs, as well as their seemingly monstrous and fantastic nature, have ensured their regular appearance in best-selling books and films, such as Jurassic Park. Persistent public enthusiasm for the animals has resulted in significant funding for dinosaur science, and new discoveries are regularly covered by the media.
+                
+                They first appeared during the Triassic period, between 243 and 233.23 million years ago (mya), although the exact origin and timing of the evolution of dinosaurs is the subject of active research.</p>
+        </article>
+
+    </div>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
