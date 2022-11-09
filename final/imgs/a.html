@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9pixcelstudio</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+
+         /*nav bar sytle*/
+        @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+        .navbar{ background-color: #fff; border: none; padding-bottom: 10px;  font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 18px;height: 90px; text-transform: capitalize; border-bottom: 1px solid #AAAAAA}
+        .navbar-toggle {position: relative;margin-top: 40px;top: 2px;}
+        .navbar-nav { padding-right: 10px;margin-top: 20px; background-color: #fff}
+        .navbar-nav li { margin:0 20px; }
+
+         /*carousel style*/
+        a:hover{text-decoration: none;} /*링크 선이 보이지 않게*/
+        body{padding-top: 90px;} /*nav bar height*/
+        .container-fluid{padding: 0px;}
+
+        /*logo style (navbar-brand)*/
+        .navbar-brand{padding-left: 20px;}
+
+        /*마우스 대면 생상 변경
+        .navbar-default .navbar-nav>li>a:hover {color:tomato}
+
+        /*현재 매뉴의 색상 변경(그룹선택자)*/
+        .navbar-default .navbar-nav>li.active>a,
+        .navbar-default .navbar-nav>li.active>a:hover,
+        .navbar-default .navbar-nav>li.active>a:focus
+       { color: #FF8000; background-color: #fff} 
+
+
+       /*화살표 이미지*/
+       .control {
+            position: inherit; /*relateve 써도 돼*/
+            top: 50%; 
+            display: inline-block;
+            right: 50%; /*화살표 이미지 위치 조정*/
+            z-index: 5; /*우선순위 뒤로 사라지는 현상 대비*/
+       }
+
+        /* Media query */
+        @media (max-width: 320px)  {
+        .navbar-brand img { width: 80%; height: auto; margin-top:-100px}  
+      }
+        @media (max-width: 980px) {
+        .navbar-nav li { margin:0 10px;}
+      }
+        /*icon style*/
+      .service {
+        margin: 40px 0; 
+      }
+      .service a{
+        display: block;
+      }
+
+      .icons{
+        float: left;
+        display: block; /*텍스트 줄바꿈*/
+        font-size: 30px;
+        color: #fff;
+        background-color: black;
+        border-radius: 50%; 
+        text-align: center;
+        margin-right: 15px;
+        padding: 20px;
+        border: 4px solid black; 
+        transition: all 2s; /*아이콘 hover효과가 2초 진행되게 해라*/
+      }
+      
+      .service a:hover .icons {
+        background: lightgreen;
+      }
+
+    </style>
+</head>
+<body> <!--class="속성"-->
+    <div class="container-fluid"> <!-- 가로 해상도에 상관없이 100%의 width-->
+        <div class="container"> <!--default fixed-->
+            <nav class="navbar navbar-default navbar-fixed-top" id="navbar-scroll">
+                <div class="container">
+                    <div class="navbar-header"> <!--헤더부분 햄버거 -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <!--collapase:내용 표시/숨기기 data-target 사용시 필수-->
+                            <span class="sr-only">Toggle nav</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                            <a class="navbar-brand" href="#"><img src="imgs/logo.png"></a> <!--.navbar-brand class is used to highlight the brand/logo/project name of your page-->
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse"> <!--햄버거 눌렀을 때 나오는 메인 메뉴-->
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div> <!--navbar-collapse end-->
+
+        <div id="carousel-generic" class="carousel slide">
+            <ol class="carousel-indicators"> <!--인디게이터-->
+                <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-generic" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner"> <!--이미지 삽입 부분-->
+                <div class="item active"> <!--active 활성화 해야 화면에 보여-->
+                    <img src="imgs/01.jpg" alt="First slid">
+                </div>
+                <div class="item">
+                    <img src="imgs/02.jpg" alt="First slid">
+                </div>
+                <div class="item">
+                    <img src="imgs/03.jpg" alt="First slid">
+                </div>
+                <div class="item">
+                    <img src="imgs/04.jpg" alt="First slid">
+                </div>
+                <div class="item">
+                    <img src="imgs/05.jpg" alt="First slid">
+                </div>
+                <div class="item">
+                    <img src="imgs/06.jpg" alt="First slid">
+                </div>
+                <div class="item">
+                    <img src="imgs/06.jpg" alt="First slid">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                <img src="imgs/KakaoTalk_20221109_111127883.png" class="control"> <!--화살표 이미지로 대체-->
+            </a>
+            <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                <img src="imgs/KakaoTalk_20221109_111127883_01.png" class="control">
+            </a>
+        </div> <!--carousel end-->
+
+        <div class="container">
+            <div class="row service">
+                <div class="col-xs-6 col-md-3"> <!--작은화면 행에 2개씩, 큰 화면은 4개씩 표시-->
+                    <a href="#">
+                        <span class="glyphicon glyphicon-heart-empty icons"></span>
+                        <h4>Fresh &amp; clean design</h4>
+                        <p>깔끔하고 세련된 웹 및 그래픽 디자인을 구현</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-tree-conifer icons"></span>
+                        <h4>Fresh &amp; clean design</h4>
+                        <p>깔끔하고 세련된 웹 및 그래픽 디자인을 구현</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-apple icons"></span>
+                        <h4>Fresh &amp; clean design</h4>
+                        <p>깔끔하고 세련된 웹 및 그래픽 디자인을 구현</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-camera icons"></span>
+                        <h4>Fresh &amp; clean design</h4>
+                        <p>깔끔하고 세련된 웹 및 그래픽 디자인을 구현</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div><!--container-fluid end-->
+
+
+
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.carousel').carousel()
+    </script>
+</body>
+
+</html>
